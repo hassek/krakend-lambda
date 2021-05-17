@@ -19,7 +19,7 @@ import (
 )
 
 const (
-	Namespace = "github.com/devopsfaith/krakend-lambda"
+	Namespace = "github.com/hassek/krakend-lambda"
 )
 
 var (
@@ -38,6 +38,7 @@ func BackendFactory(bf proxy.BackendFactory) proxy.BackendFactory {
 }
 
 func invokerFactory(o *Options) Invoker {
+  fmt.Println(o.Config)
 	if o.Config == nil {
 		return lambda.New(session.New())
 	}

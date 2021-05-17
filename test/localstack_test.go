@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	krakendlambda "github.com/devopsfaith/krakend-lambda"
+	krakendlambda "github.com/hassek/krakend-lambda"
 	"github.com/devopsfaith/krakend/config"
 	"github.com/devopsfaith/krakend/proxy"
 )
